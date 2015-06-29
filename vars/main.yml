@@ -1,0 +1,9 @@
+---
+dependencies:
+  - babel
+  - argparse
+  - iso8601
+  - pbr
+  - PrettyTable
+  - PyYAML
+  - requests
