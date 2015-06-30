@@ -6,7 +6,6 @@ The role install the cli into a virtualenv on the box.
 
 ## Requirements
 virtualenv must be installed on the system. 
-All dependencies {babel, argparse, iso8601, pbr, PrettyTable, PyYAML, requests} should be installed
 
 ## Role Variables
 
