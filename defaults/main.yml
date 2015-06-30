@@ -1,8 +1,4 @@
 ---
-monasca_events_api_url: 'http://192.168.10.4:8082/v2.0/'
 monasca_virtualenv_dir: /opt/monasca
 pip_conf_dir: ~/.pip
 skip_install: False
-monasca_events_use_pip: False
-run_mode: Deploy
-

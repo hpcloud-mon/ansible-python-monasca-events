@@ -1,17 +1,5 @@
 ---
-- name: apt-get update
-  apt: update_cache=yes
-- name: Install virtualenv
-  apt: name=python-virtualenv
-- name: Install pip from apt
-  apt: name=python-pip state=present
-- name: pip upgrade pip
-  pip: name=pip state=latest
-- name: Install python-monasca-events dependencies
-  pip: name={{item}} state=present
-  with_items: dependencies
-  when: not skip_install
 - name: pip install python-monasca-events
-  pip: name=python-monasca-events
+  pip: name=python-monasca-events state=latest virtualenv="{{monasca_virtualenv_dir}}"
   when: not skip_install
-
+  
